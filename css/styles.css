@@ -1,8 +1,8 @@
 /* Cordillera Grupo Constructor — estilos del sitio */
 :root{--navy:#1B2A4A;--navy-2:#121D33;--blue:#234F94;--green:#5B803A;--green-d:#4A6B2E;--green-l:#8DB561;--green-xl:#B5D18F;--cream:#F6F3EA;--cream-2:#EFEBE0;--ink:#3A4763;--muted:#4D5873;--pad:80px}
 *{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:96px}
-body{margin:0;background:var(--cream);font-family:'Manrope',sans-serif;color:var(--navy);-webkit-font-smoothing:antialiased}
+html{overflow-x:clip;scroll-behavior:smooth;scroll-padding-top:96px}
+body{margin:0;overflow-x:clip;background:var(--cream);font-family:'Manrope',sans-serif;color:var(--navy);-webkit-font-smoothing:antialiased}
 img{display:block;max-width:100%}
 a{color:var(--navy);text-decoration:none}a:hover{color:var(--blue)}
 .serif{font-family:'Cormorant Garamond',Georgia,serif}
@@ -139,7 +139,9 @@ footer a{color:rgba(246,243,234,.78)}footer a:hover{color:#fff}
   :root{--pad:48px}
   .svc .wrap,.svc.rev .wrap{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:56px}
   .nosotros .in{grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:56px}
-  .cards{grid-template-columns:repeat(3,minmax(0,1fr));row-gap:40px}
+  .cards{gap:14px}
+  .card .t b{font-size:15px;letter-spacing:.06em}
+  .card .t span{font-size:14px}
   .contacto .wrap{gap:56px}
 }
 @media (max-width:900px){
